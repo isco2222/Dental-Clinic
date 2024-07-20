@@ -1,0 +1,138 @@
+@import url("styles.css");
+
+/* Main content area styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Page header styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Dark blue */
+}
+
+.table-container {
+  height: 80%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden;
+  position: relative;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #37474f; /* Green */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #eeebeb; /* Light green on hover */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light gray */
+}
+
+tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0; /* Light gray */
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tfoot {
+  background-color: #80cbc4; /* Teal */
+  color: white;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+/* styling for form */
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  width: 35%;
+  margin: 20px auto;
+  border: #37474f 3px solid;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  padding: 10px;
+  border: 1px solid #37474f;
+  margin-bottom: 20px;
+}
+
+.form-container button {
+  padding: 20px;
+  background-color: #37474f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-container button:hover {
+  background-color: #80cbc4;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Basic styles for the select element */
+#dentist {
+  background-color: #fff; /* Set background color */
+  color: #000; /* Set text color to black */
+  border: 1px solid #ccc; /* Add a border */
+  padding: 5px; /* Add some padding */
+  font-size: 14px; /* Set font size */
+  width: 100%; /* Full width of its container */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+/* Style the options in the dropdown */
+select option {
+  color: #000; /* Set text color to black */
+}
+
